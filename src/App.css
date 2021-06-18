@@ -19,10 +19,14 @@ body{
 .navbar .logo h3{
   color:rgb(107, 107, 107)
 }
-.navbar .links a{
+.navbar .links {
+  display: flex;
+}
+
+.navbar .links .single-link{
+  padding:5px;
   margin:5px;
-  display: inline-block;
-  padding:5px
+
 }
 
 

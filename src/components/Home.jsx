@@ -32,7 +32,6 @@ const Home = ()=>{
     }
 
     return (
-
             <div >{ 
                 <Blogs blogs={blogs} 
                 handleDelete={handleDelete}/>
