@@ -1,6 +1,6 @@
-const Links = (props)=>{
+const Links = ({links})=>{
     return (
-        props.links.map((link, index)=>{
+        links.map((link, index)=>{
             return(
         <div key={index} className="single-link">
                 <a href={link.url}>{link.name}</a>

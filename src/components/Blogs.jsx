@@ -7,7 +7,7 @@ const Blogs = (props)=>{
                     <div key={blog.id} className="blog">
                         <Card 
                             card={blog}
-                            handleDelete={()=>props.handleDelete(blog.id)}/>
+                            handleDelete={(e)=>props.handleDelete(blog.id)}/>
                     </div>
                 ))
                 }

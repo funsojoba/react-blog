@@ -1,7 +1,7 @@
+import React, { Component } from 'react'
 import Logo from './logo'
 import Links from './links'
 import SearchBox from './search'
-import React, { Component } from 'react'
 
 class Navbar extends Component {
     constructor(props){
