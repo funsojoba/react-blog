@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Blogs from './Blogs'
+import Navbar from "./navbar/Navbar"
 
 const Home = ()=>{
     const [blogs, setBlogs] = useState([
@@ -29,14 +30,16 @@ const Home = ()=>{
         const newBlog = blogs.filter(blog => blog.id !== id)
 
         setBlogs(newBlog)
+        console.log(id)
     }
 
     return (
-            <div >{ 
+            <div >
+                <Navbar />
                 <Blogs blogs={blogs} 
                 handleDelete={handleDelete}/>
                 
-            }</div>
+            </div>
         )
 }
 

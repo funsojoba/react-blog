@@ -1,14 +1,13 @@
+import Card from './card'
+
 const Blogs = (props)=>{
-    const blogs = props.blogs
     return (
         <div className="home">{
-            blogs.map((blog) =>(
+            props.blogs.map((blog) =>(
                     <div key={blog.id} className="blog">
-                        <img src={blog.imgUrl}  className="image"/>
-                        <small>{blog.author}</small>
-                        <h2>{blog.title}</h2>
-                        <p>{blog.body}</p>
-                        <button onClick={()=>props.handleDelete(blog.id)}>Delete</button>
+                        <Card 
+                            card={blog}
+                            handleDelete={()=>props.handleDelete(blog.id)}/>
                     </div>
                 ))
                 }

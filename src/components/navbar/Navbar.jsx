@@ -1,5 +1,6 @@
 import Logo from './logo'
 import Links from './links'
+import SearchBox from './search'
 import React, { Component } from 'react'
 
 class Navbar extends Component {
@@ -20,6 +21,9 @@ class Navbar extends Component {
         return (
             <div className ="navbar">
                 <Logo />
+                <SearchBox
+                    placeholder="Search blog" 
+                    handleChange={this.props.handleChange}/>
                 <div className="links" >
                     <Links links={this.state.links}/>
                 </div>
