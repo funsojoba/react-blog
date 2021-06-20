@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Blogs from './Blogs'
-import Navbar from "./navbar/Navbar"
+
 
 const Home = ()=>{
     const [blogs, setBlogs] = useState([
@@ -35,7 +35,6 @@ const Home = ()=>{
 
     return (
             <div >
-                <Navbar />
                 <Blogs blogs={blogs} 
                 handleDelete={handleDelete}/>
                 
