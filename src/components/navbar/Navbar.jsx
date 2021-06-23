@@ -24,9 +24,9 @@ class Navbar extends Component {
                 <SearchBox
                     placeholder="Search blog" 
                     handleChange={this.props.handleChange}/>
-                <div className="links" >
-                    <Links links={this.state.links}/>
-                </div>
+                
+                    <Links/>
+                
             </div>
         )
     }

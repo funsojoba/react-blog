@@ -62,3 +62,27 @@ body{
   width:100%
 }
 
+input{
+  padding:10px 20px;
+  width:60%;
+  border-radius: 10px;
+  display: block;
+  border: none;
+  margin-bottom: 15px;
+}
+textarea{
+  padding:10px 20px;
+  width:60%;
+  border-radius: 10px;
+  display: block;
+  border: none;
+  height: 200px;
+}
+
+
+.add-blog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

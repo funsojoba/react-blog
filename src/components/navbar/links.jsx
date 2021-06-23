@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom"
 
-const Links = ({links})=>{
+const Links = ()=>{
     return (
-        links.map((link, index)=>{
-            return(
-        <div key={index} className="single-link">
-                <Link to={link.url}>{link.name}</Link>
-            </div>
-            )
-        })
-    )
+        <div className="links">
+            <Link to ="/" className="single-link">Home</Link>
+            <Link to="/create" className="single-link">Create</Link>
+        </div>
+        )
 }
 
 export default Links
